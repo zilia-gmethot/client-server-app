@@ -35,8 +35,8 @@ jobs:
             echo "API is not ready after waiting for 30 seconds."
             exit 1
           fi
-      - name: Run your tests
-        run: pytest --tracing=retain-on-failure
+      - name: Run tests
+        run: pytest --browser chromium --tracing=retain-on-failure
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
