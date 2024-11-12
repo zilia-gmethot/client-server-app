@@ -8,3 +8,4 @@
 - Generate TypeScript types from OpenAPI schemas?
   - How? https://github.com/openapi-ts/openapi-typescript/tree/main/packages/openapi-typescript
   - When?
+- https://code.visualstudio.com/docs/editor/multi-root-workspaces#_workspace-launch-configurations
