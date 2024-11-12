@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          npx ng test --browsers=ChromeHeadless
+          npx ng test --browsers=ChromeHeadless --watch=false
       - name: Run tests
         run: npm test
   test-server:
