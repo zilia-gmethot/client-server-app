@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: lts/*
           cache: "npm"
+          cache-dependency-path: "client"
       - name: Install dependencies
         run: npm ci
       - name: Run tests
@@ -34,6 +35,7 @@ jobs:
         with:
           python-version: "3.10"
           cache: "pip"
+          cache-dependency-path: "server"
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Install browsers and OS dependencies
